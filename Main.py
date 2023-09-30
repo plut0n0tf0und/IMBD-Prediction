@@ -9,7 +9,7 @@ FILENAME = 'movie_metadata_filtered_aftercsv.csv'
 def main():
     model = pickle.loads(open('models/LogRegression_thre1'))
     # provide your filename here
-    process(filename='your_file_name.csv')
+    process(filename='filtered metadata_csv')
     datadf = pd.read_csv(FILENAME)
     datadf = datadf.drop(datadf.columns[[0]],axis=1)
     datadf = (datadf-datadf.mean())/(datadf.max()-datadf.min())
