@@ -35,3 +35,9 @@ Results are summarized in the table
 | Logitic Regression  | 85.09        |  
 | SVC                 | 83.91        	|  
 | Naive Bayes(Bernoulli)| 80.23      |
+
+## Conclusion
+Finally, the Conclusion that I made from the results    
+* Predicting the exact rating is quiet difficult also any predictions wouldn't be that accurate because the main contribution towards the rating is the story of the movie.  
+* There seems very less relation between the stats and the rating since some actors may be good but the movie's facebook likes wouldn't be that high because of less publicity of the movie.    
+* L2 regularized logistic Regression gave the best results as compared to other classification algorithms.
