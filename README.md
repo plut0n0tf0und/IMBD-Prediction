@@ -13,3 +13,25 @@ The data set along with its description is defined here (https://www.kaggle.com/
 
 ## Usage
 To view the predictions run the main.py just change the filename of your data
+
+## Results
+
+Results are summarized in the table  
+* First, the accuracy was calculated by letting the model only predict the exact rating.
+
+
+| Model  	| Accuracy (%) 	|  
+|--------------------	|--------------	|  
+| K Nearest Neighbours| 37.52       	|  
+| Logitic Regression  | 40.9         	|  
+| SVC                 | 36.35        	|  
+| Naive Bayes(Bernoulli)| 33.67       |  
+
+* Secondly, the accuracy was calculated by letting the model only predict the range of rating i.e with the error of +-1, so for e.g if the rating predicted was 8 then the accuracy was tested if the actual label was between 8-1 to 8+1.
+
+| Model  	| Accuracy (%) 	|  
+|--------------------	|--------------	|  
+| K Nearest Neighbours| 80.90      	|  
+| Logitic Regression  | 85.09        |  
+| SVC                 | 83.91        	|  
+| Naive Bayes(Bernoulli)| 80.23      |
