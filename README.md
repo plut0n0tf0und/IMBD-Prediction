@@ -4,17 +4,6 @@
 
 Welcome to the Credit Card Fraud Detection repository! This project is dedicated to building a machine learning model for detecting fraudulent credit card transactions. Credit card fraud is a common problem that affects both cardholders and financial institutions. Detecting fraudulent transactions is crucial to prevent financial losses and protect users.
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Dataset](#dataset)
-- [Methodology](#methodology)
-- [Getting Started](#getting-started)
-- [Data Preprocessing](#data-preprocessing)
-- [Model Training](#model-training)
-- [Evaluation](#evaluation)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 Credit card fraud detection is an important task in the financial industry. This project aims to develop a machine learning model that can accurately identify fraudulent transactions. The model will help financial institutions and cardholders in flagging and preventing potential fraud.
