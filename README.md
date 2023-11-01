@@ -1,43 +1,37 @@
-# IMBD-Prediction
-This project uses machine learning to predict IMDb movie ratings. Leveraging IMDb data and various algorithms, it estimates a movie's rating based on its attributes. Valuable for filmmakers and movie enthusiasts.
+# Credit Card Fraud Detection
 
-## About the data set
-The data set along with its description is defined here (https://www.kaggle.com/datasets/luiscorter/netflix-original-films-imdb-scores)
+![Credit Card Fraud Detection](fraud_detection_image.png)
 
-## Steps
-* After preprocessing/cleaning the data there were around 2000 data points.    
-* The main task was to predict the IMDB rating of a movie.  
-* This was considered as a classification problem by taking 10 classes 1-10 i.e the rating.  
-* There were initially many features which was then reduced using the domain knowledge finally only 9 features was taken into consideration, the filtered and processed data is saved in the after csv.csv file.  
-* All the models are pickled in the models folder.
+Welcome to the Credit Card Fraud Detection repository! This project is dedicated to building a machine learning model for detecting fraudulent credit card transactions. Credit card fraud is a common problem that affects both cardholders and financial institutions. Detecting fraudulent transactions is crucial to prevent financial losses and protect users.
 
-## Usage
-To view the predictions run the main.py just change the filename of your data
+## Table of Contents
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Methodology](#methodology)
+- [Getting Started](#getting-started)
+- [Data Preprocessing](#data-preprocessing)
+- [Model Training](#model-training)
+- [Evaluation](#evaluation)
+- [Results](#results)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Results
+## Introduction
+Credit card fraud detection is an important task in the financial industry. This project aims to develop a machine learning model that can accurately identify fraudulent transactions. The model will help financial institutions and cardholders in flagging and preventing potential fraud.
 
-Results are summarized in the table  
-* First, the accuracy was calculated by letting the model only predict the exact rating.
+## Dataset
+We are using a publicly available credit card fraud dataset from [source link] which contains a large number of transactions made by credit cardholders. The dataset is highly imbalanced, with a small fraction of fraudulent transactions.
 
+## Methodology
+1. Data Preprocessing: Cleaning, scaling, and handling class imbalance.
+2. Feature Engineering: Creating relevant features for model training.
+3. Model Selection: Using various machine learning algorithms and deep learning models.
+4. Model Evaluation: Assessing the model's performance using metrics like accuracy, precision, recall, and F1-score.
+5. Results: Presenting the results and insights.
 
-| Model  	| Accuracy (%) 	|  
-|--------------------	|--------------	|  
-| K Nearest Neighbours| 37.52       	|  
-| Logitic Regression  | 40.9         	|  
-| SVC                 | 36.35        	|  
-| Naive Bayes(Bernoulli)| 33.67       |  
+## Getting Started
+To get started with this project, follow these steps:
 
-* Secondly, the accuracy was calculated by letting the model only predict the range of rating i.e with the error of +-1, so for e.g if the rating predicted was 8 then the accuracy was tested if the actual label was between 8-1 to 8+1.
-
-| Model  	| Accuracy (%) 	|  
-|--------------------	|--------------	|  
-| K Nearest Neighbours| 80.90      	|  
-| Logitic Regression  | 85.09        |  
-| SVC                 | 83.91        	|  
-| Naive Bayes(Bernoulli)| 80.23      |
-
-## Conclusion
-Finally, the Conclusion that I made from the results    
-* Predicting the exact rating is quiet difficult also any predictions wouldn't be that accurate because the main contribution towards the rating is the story of the movie.  
-* There seems very less relation between the stats and the rating since some actors may be good but the movie's facebook likes wouldn't be that high because of less publicity of the movie.    
-* L2 regularized logistic Regression gave the best results as compared to other classification algorithms.
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/yourusername/credit-card-fraud-detection.git
